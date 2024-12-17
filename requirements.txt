@@ -6,3 +6,4 @@ Flask
 gunicorn
 numpy
 dash_bootstrap_components
+openpyxl
