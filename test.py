@@ -914,7 +914,8 @@ def actualizar_grafico_horometro(mes, ano):
     horometro_booster_5=crear_grafico_horometro(mes, ano, df,'Booster 5 - Horómetro','Booster 5 - Diferencia Horómetro')
     return horometro_pozo_1a,horometro_pozo_2a,horometro_pozo_3a,horometro_pozo_4a,horometro_pozo_5,horometro_booster_1,horometro_booster_2,horometro_booster_3,horometro_booster_4,horometro_booster_5
 
-
+#server de google cloud
+server=app.server
 # Ejecutar la aplicación
 if __name__ == '__main__':
     app.run_server(debug=True)
