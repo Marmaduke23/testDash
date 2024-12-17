@@ -5,5 +5,5 @@ automatic_scaling:
   max_concurrent_requests: 70
   target_throughput_utilization: 0.70
   max_instances: 1
-entrypoint: gunicorn -b 0.0.0.0:8080 dashboard:server
+entrypoint: gunicorn -b 0.0.0.0:8080 test:server
 # [END django_app]
