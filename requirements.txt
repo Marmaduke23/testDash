@@ -4,3 +4,5 @@ plotly
 pandas
 Flask
 gunicorn
+numpy
+dash_bootstrap_components
