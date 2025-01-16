@@ -916,6 +916,9 @@ def actualizar_grafico_horometro(mes, ano):
 
 #server de google cloud
 server=app.server
-# Ejecutar la aplicación
+
+# Ejecutar la aplicación para producción (en Azure)
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    # Azure asigna un puerto dinámico a través de la variable de entorno 'PORT'
+    port = int(os.environ.get("PORT", 8000))  # Default to 8000 if PORT is not found
+    app.run_server(debug=False, host='0.0.0.0', port=port)
