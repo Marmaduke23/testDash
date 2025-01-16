@@ -918,7 +918,6 @@ def actualizar_grafico_horometro(mes, ano):
 server=app.server
 
 # Ejecutar la aplicación para producción (en Azure)
-if __name__ == '__main__':
-    # Azure asigna un puerto dinámico a través de la variable de entorno 'PORT'
-    port = int(os.environ.get("PORT", 8000))  # Default to 8000 if PORT is not found
-    app.run_server(debug=False, host='0.0.0.0', port=port)
+# Azure asigna un puerto dinámico a través de la variable de entorno 'PORT'
+port = int(os.environ.get("PORT", 8000))  # Default to 8000 if PORT is not found
+app.run_server(debug=False, host='0.0.0.0', port=port)
