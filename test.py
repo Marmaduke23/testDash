@@ -9,6 +9,7 @@ import plotly.graph_objs as go
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
 import numpy as np
+from flask import Flask
 
 #-------------------------------------------------------------Carga de datos--------------------------------------------------------------------------------------------------------
 # Enlace convertido de descarga directa
@@ -486,7 +487,7 @@ def crear_grafico_horometro(mes,ano,dataset,columna,titulo):
 
 
 
-
+flask_server=Flask(__name__)
 # Crear la aplicación Dash
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MATERIA]) #usamos un tema por defecto
 
